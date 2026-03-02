@@ -1,0 +1,44 @@
+# ===============================
+# Terraform .gitignore (Root Level)
+# ===============================
+
+# Ignore all .terraform directories in any subfolder
+**/.terraform/*
+
+# Ignore Terraform state files in any subfolder
+**/*.tfstate
+**/*.tfstate.*
+
+# Ignore crash logs
+**/crash.log
+**/crash.*.log
+
+# Ignore sensitive variable files
+**/*.tfvars
+**/*.tfvars.json
+
+# Ignore plan files
+**/*.tfplan
+
+# Ignore override files
+**/override.tf
+**/override.tf.json
+**/*_override.tf
+**/*_override.tf.json
+
+# Ignore CLI config files
+.terraformrc
+terraform.rc
+
+# Optional: Ignore lock file (NOT recommended for teams)
+# **/.terraform.lock.hcl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
